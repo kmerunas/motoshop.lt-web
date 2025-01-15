@@ -1,0 +1,159 @@
+:root {
+  --light-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+header {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(54, 69, 79, 1) 93%
+  );
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  ul {
+    display: flex;
+    gap: 2rem;
+  }
+  ul li {
+    list-style: none;
+  }
+  ul li a {
+    color: var(--light-color);
+
+    text-decoration: none;
+  }
+}
+
+main {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(./img/panigale-background.jpg);
+  background-size: cover;
+  height: 80vh;
+  padding-top: 2rem;
+  padding-right: 8rem;
+  padding-left: 3.5rem;
+
+  div h1 {
+    text-align: center;
+    color: rgb(194, 193, 193);
+    font-weight: 400;
+  }
+}
+footer {
+  background: rgb(142, 5, 5);
+  background: linear-gradient(
+    0deg,
+    rgba(142, 5, 5, 1) 0%,
+    rgba(0, 0, 0, 1) 98%
+  );
+  color: var(--light-color);
+  display: grid;
+  grid-template-columns: 8fr 2fr 1fr;
+  padding: 2rem 8rem;
+  line-height: 1.6rem;
+
+  ul {
+    list-style: none;
+  }
+
+  ul li a {
+    color: var(--light-color);
+  }
+  div h4 {
+    padding-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+}
+.logo {
+  font-size: 2rem;
+  color: var(--light-color);
+  cursor: pointer;
+  font-weight: 500;
+}
+.logo::first-letter {
+  color: rgb(192, 0, 0);
+}
+.cart-button {
+  all: unset;
+  padding: 1rem 2rem;
+  background: rgb(80, 6, 6);
+  background: linear-gradient(
+    90deg,
+    rgba(80, 6, 6, 1) 0%,
+    rgba(233, 17, 17, 1) 100%
+  );
+  color: var(--light-color);
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.cart-button:hover {
+  opacity: 0.5;
+}
+
+.moto-img {
+  width: 600px;
+}
+.main-wrapper {
+  display: grid;
+  padding-top: 6rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.second-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  h3 {
+    color: var(--light-color);
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  h4 {
+    color: var(--light-color);
+  }
+  p {
+    color: var(--light-color);
+    line-height: 1.7;
+  }
+}
+.buy-button {
+  all: unset;
+  background: rgb(80, 6, 6);
+  background: linear-gradient(
+    90deg,
+    rgba(80, 6, 6, 1) 0%,
+    rgba(233, 17, 17, 1) 100%
+  );
+  color: var(--light-color);
+  padding: 1rem 2rem;
+  width: 100px;
+  border-radius: 10px;
+  font-weight: 300;
+  text-align: center;
+  cursor: pointer;
+}
+.buy-button:hover {
+  opacity: 0.5;
+}

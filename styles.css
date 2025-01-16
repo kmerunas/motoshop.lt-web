@@ -46,12 +46,8 @@ main {
     url(./img/panigale-background.jpg);
   background-size: cover;
   background-position: center;
-
-  /* height: 80vh; */
   height: 120vh;
   padding-top: 2rem;
-  /* padding-right: 8rem;
-  padding-left: 3.5rem; */
 
   div h1 {
     text-align: center;
@@ -114,12 +110,21 @@ footer {
   opacity: 0.5;
 }
 
+.moto-img-1 {
+  width: 600px;
+  position: relative;
+  animation-name: card-flow;
+  animation-duration: 1.5s;
+}
 .moto-img {
   width: 600px;
+  position: relative;
+  animation-name: card-flow-right;
+  animation-duration: 1.5s;
 }
 .main-wrapper {
   display: grid;
-  padding-top: 6rem;
+  padding-top: 3rem;
   padding-right: 8rem;
   padding-left: 3.5rem;
   grid-template-columns: 1fr 1fr;
@@ -169,4 +174,24 @@ footer {
 }
 .buy-button:hover {
   opacity: 0.5;
+}
+@keyframes card-flow {
+  0% {
+    right: 300px;
+    opacity: 0;
+  }
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
+}
+@keyframes card-flow-right {
+  0% {
+    left: 300px;
+    opacity: 0;
+  }
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
 }

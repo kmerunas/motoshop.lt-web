@@ -45,10 +45,13 @@ main {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
     url(./img/panigale-background.jpg);
   background-size: cover;
-  height: 80vh;
+  background-position: center;
+
+  /* height: 80vh; */
+  height: 120vh;
   padding-top: 2rem;
-  padding-right: 8rem;
-  padding-left: 3.5rem;
+  /* padding-right: 8rem;
+  padding-left: 3.5rem; */
 
   div h1 {
     text-align: center;
@@ -117,8 +120,18 @@ footer {
 .main-wrapper {
   display: grid;
   padding-top: 6rem;
+  padding-right: 8rem;
+  padding-left: 3.5rem;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
+}
+.second-main-wrapper {
+  display: grid;
+  padding-top: 6rem;
+  padding-right: 3.5rem;
+  padding-left: 8rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
 }
 .second-section {
   display: flex;
